@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:16
+    container_name: flask_crud_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: crud_app_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    container_name: flask_crud_app
+    restart: always
+    environment:
+      DB_HOST: db
+      DB_NAME: crud_app_db
+      DB_USER: postgres
+      DB_PASS: admin
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+
+volumes:
+  postgres_data:

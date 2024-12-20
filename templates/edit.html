@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block content %}
+<div
+  class="d-flex justify-content-center align-items-center"
+  style="min-height: 80vh"
+>
+  <form
+    method="post"
+    class="p-4 shadow-sm rounded bg-white"
+    style="width: 100%; max-width: 400px"
+  >
+    <h1 class="text-center mb-4">Edit Student</h1>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        value="{{ student[1] }}"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Age</label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        name="age"
+        value="{{ student[2] }}"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Save Changes</button>
+  </form>
+</div>
+{% endblock %}

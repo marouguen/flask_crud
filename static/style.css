@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Default text color */
+  padding-top: 70px; /* Adjust for fixed navbar height */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff !important; /* Primary blue */
+  border-bottom: 2px solid #0056b3 !important; /* Darker blue for contrast */
+}
+
+.navbar a.navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a.nav-link {
+  color: #fff !important;
+}
+
+.navbar a.nav-link:hover {
+  color: #d1e8ff !important; /* Light blue on hover */
+}
+
+/* Main Container */
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Table */
+.table {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px; /* Restrict max width for forms */
+  width: 100%; /* Make forms responsive */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+form .form-label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+form .form-control {
+  border-radius: 4px;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 30px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Centering Content (Optional) */
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Custom Hover Effects */
+.table-row:hover {
+  background-color: #f1f1f1; /* Subtle hover effect for table rows */
+}
+
+/* Custom Flash Messages */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Navbar Toggler Icon for Mobile */
+.navbar-toggler-icon {
+  filter: invert(1); /* Make the icon white */
+}
